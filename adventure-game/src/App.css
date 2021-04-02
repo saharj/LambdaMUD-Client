@@ -1,0 +1,20 @@
+.App-header {
+  background-color: #28385c;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.login {
+  width: 100%;
+  margin: 50px 0;
+}
+
+.login form {
+  margin: 0 auto;
+  width: 50%;
+}
