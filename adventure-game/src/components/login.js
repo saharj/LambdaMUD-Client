@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const Login = () => {
+const Login = (props) => {
   const [credentials, setCredentials] = useState({
     username: "",
     password: "",
@@ -20,7 +20,7 @@ const Login = () => {
       headers: { "Content-Type": "application/json" },
     })
       .then((res) => {
-        console.log(res);
+        props.onLogin(res.data.key);
       })
       .catch((err) => {
         console.log(err);
